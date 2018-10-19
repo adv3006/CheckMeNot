@@ -3,5 +3,5 @@ language: scala
 scala:
    - 2.12.6
 
-   script:
+script:
    - sbt ++2.12.6 test
