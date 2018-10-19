@@ -1,6 +1,0 @@
-sbt ++2.12.6 test
-sbt test
-help
-clear
-test
-exit
