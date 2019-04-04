@@ -82,7 +82,6 @@ object Main extends App {
       }
     }
   }
-
   
   for (id <- 32001 to 36000) {
     //    println("Scanning #" + id)
@@ -91,12 +90,9 @@ object Main extends App {
     //println(xmlString)
     out.print(id + "\t\t")
     if (!KMPSearch(temp, xmlString)) out.println("N/A")
-
     Thread.sleep(100)
   }
   t1 = System.nanoTime()
   println("Elapsed time: " + ((t1 - t0)/1000000000) + " seconds")
   out.close()
-
-
 }
