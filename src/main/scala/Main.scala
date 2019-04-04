@@ -1,7 +1,5 @@
 import java.io.PrintWriter
-
 import scalafx.Includes._
-
 import scala.io.Source
 import scalafx.application._
 import scalafx.event.ActionEvent
@@ -10,8 +8,7 @@ import scalafx.scene.control._
 
 
 object Main extends App {
-  val out = new PrintWriter("result3.txt")
-  //var key = "SENIOR SEMINAR"
+  val out = new PrintWriter("")
   var urlString1 = "https://sunspot.sdsu.edu/schedule/sectiondetails?scheduleNumber="
   var urlString2 = "&period=20192&admin_unit=R"
   var html = Source.fromURL("https://www.google.com/")
@@ -86,6 +83,7 @@ object Main extends App {
     }
   }
 
+  
   for (id <- 32001 to 36000) {
     //    println("Scanning #" + id)
     html = Source.fromURL(urlString1 + id + urlString2, "UTF-8")
@@ -98,7 +96,6 @@ object Main extends App {
   }
   t1 = System.nanoTime()
   println("Elapsed time: " + ((t1 - t0)/1000000000) + " seconds")
-
   out.close()
 
 
