@@ -11,8 +11,7 @@ import scalafx.scene.control._
 
 object Main extends App {
   val out = new PrintWriter("result3.txt")
-  //var key = "SENIOR SEMINAR"
-  var urlString1 = "https://sunspot.sdsu.edu/schedule/sectiondetails?scheduleNumber="
+  var urlString1 = "https://xxxxxxxx.xxxxxx.xxxxx/schedule/sectiondetails?scheduleNumber="
   var urlString2 = "&period=20192&admin_unit=R"
   var html = Source.fromURL("https://www.google.com/")
   var xmlString = ""
